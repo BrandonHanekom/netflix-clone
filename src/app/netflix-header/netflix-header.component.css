@@ -1,0 +1,28 @@
+.header {
+    background: black;
+    height: 50px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.netflixLogo {
+    padding-right: 25px;
+}
+
+.flexible {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: darkgray;
+}
+
+.mainNav {
+    flex-grow: 1;
+}
+
+.active {
+    font-weight: bold;
+    color: white;
+}
