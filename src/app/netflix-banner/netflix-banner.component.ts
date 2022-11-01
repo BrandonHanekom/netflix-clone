@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Movie, movieList } from '../models/movie';
 
 @Component({
   selector: 'app-netflix-banner',
@@ -11,5 +12,7 @@ export class NetflixBannerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  movies: Movie[] = movieList;
 
 }

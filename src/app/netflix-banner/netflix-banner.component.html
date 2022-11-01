@@ -1,7 +1,10 @@
 <div class="banner">
-    <div>
-      <h1>Movie Name</h1>
+  <div>
+    <div *ngFor="let movie of movies">
+      <!-- <img [src]="movie.banner" style="height: 525px; width: 100%" /> -->
+      <h1>{{movie.name}}</h1>
       <button class="playButton">Play</button>
       <button class="infoButton">More Info</button>
-    </div>  
+    </div>
   </div>
+</div>
