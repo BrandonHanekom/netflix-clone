@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { outputAst } from '@angular/compiler';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Movie, movieList } from 'src/app/models/movie';
 
 
@@ -14,6 +15,17 @@ export class SliderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input()
   movies: Movie[] = movieList;
+
+  @Input()
+  title = '---';
+
+  @Output()
+  movieClicked = new EventEmitter<Movie>();
+
+  onMovieClick(item: Movie) {
+    this.movieClicked.emit(item);
+  }
 
 }

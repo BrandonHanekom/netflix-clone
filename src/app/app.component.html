@@ -1,3 +1,5 @@
 <app-netflix-header></app-netflix-header>
 <app-netflix-banner></app-netflix-banner>
-<app-slider></app-slider>
+<app-slider  title="Watch Now" [movies]="availableMovies" (movieClicked)="addMovieToWatchlist($event)"></app-slider>
+<app-slider title="Coming Soon" [movies]="comingSoonMovies"></app-slider>
+<app-slider title="My Watchlist" [movies]="myWatchlist"></app-slider>
