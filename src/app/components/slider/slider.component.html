@@ -1,8 +1,14 @@
-<div>
-  <h3 class="rowHeading">{{title}}</h3>
-</div>
-<div class="row">
-  <div class="column" *ngFor="let movie of movies" (click)="onMovieClick(movie)">
-    <img [src]="movie.thumbnail" style="width: 165px" />
+<div class="movieSelection">
+  <div>
+    <h3 class="rowHeading">{{ title }}</h3>
+  </div>
+  <div class="row">
+    <div
+      class="column"
+      *ngFor="let movie of movies"
+      (click)="onMovieClick(movie)"
+    >
+      <img [src]="movie.thumbnail" style="width: 165px" />
+    </div>
   </div>
 </div>

@@ -13,8 +13,16 @@
 
   .row {
     display: flex;
+    overflow-x: scroll;
   }
 
 .rowHeading {
     font-family: Helvetica, Arial, sans-serif;
 }
+
+.movieSelection {
+  background: black;
+  color: white;
+  margin-top: 60px;
+}
+

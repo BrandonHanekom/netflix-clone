@@ -4,26 +4,43 @@
   height: 80vh;
 }
 
-h1 {
-  margin: 0;
+.bannerImg {
+  height: 525px; 
+  width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 
-.playButton {
+.movieName {
+  margin: 0;
+  position: absolute;
+  bottom: 270px;
+  left: 26px;
+  color: white;
+}
+
+.btn {
    background: white;
    color: black;
    font-family: Helvetica, Arial, sans-serif;
 }
 
-.playButton:hover {
+.btn:hover {
   background: grey;
 }
 
-.playButton:active {
+.btn:active {
   background: red;
 }
 
-.infoButton {
-    background: grey;
-    font-family: Helvetica, Arial, sans-serif;
-    color: white;
+#playButton {
+  position: absolute;
+  bottom: 240px;
+  left: 26px;
+}
+
+#infoButton {
+  position: absolute;
+  bottom: 240px;
+  left: 86px;
 }
